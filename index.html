@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <link rel="stylesheet" href="index.css">
+
+        <title>rewna's QR CODE GENERATOR</title>
+    </head>
+    <body>
+        
+        <div class="main">
+            <img id="logo-img" src="resources/Logo.svg" alt="logo-img">
+            <!-- <p>hello world</p> -->
+            <div class="wrapper">
+                <input id="input-el" type="text" placeholder="Enter an url">
+                <button id="input-btn">QR code <i class="fa-solid fa-qrcode"></i></button>
+            </div>
+            
+           
+        </div>
+        <div class="second">
+            <img id="smallLogo-img"src="resources/Logo-small.svg" alt="smalllogo-img">
+            <div class="outer-border">
+                <div id="qrcode"></div>
+            </div>
+            
+            <div class="back-btn">
+                <button class="style-btn" id="download-btn">Download <i class="fa-solid fa-download"></i></button>
+                
+                <button class="style-btn" id="share-btn">Share <i class="fa-solid fa-link"></i></button>
+                <button class="style-btn" id="goback-btn">Go Back <i class="fa-solid fa-backward"></i></button>
+            </div>
+        </div>
+        
+        
+        
+
+        <script src="qrcode.js"></script><!--  THIS NEEDED TO BE BEFORE THE INDEX.JS TO WORK -->
+        <script  src="index.js"></script> <!--THERE NEEDS TO BE A div with id="qrcode" TO WORK-->
+        
+
+    </body>
+</html>
