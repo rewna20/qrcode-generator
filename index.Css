@@ -6,6 +6,10 @@ body {
     font-family: "Outfit", sans-serif;
     text-align: center;
     
+    
+    
+    
+    
 }
 
 
@@ -16,6 +20,7 @@ body {
 
 #input-el{
     margin: 20px auto;
+    
     width: 550px;
     height: 40px;
     background-color: #030616;
@@ -105,7 +110,27 @@ body {
 
 
 
+/* Mobile - even smaller */
+@media (max-width: 480px) {
+    #input-el {
+        max-width: 100%; /* Use full available width */
+        width: 90%; /* But only 90% of container */
+        height: 48px; /*Taller for touch targets*/
+        padding: 10px 90px 10px 16px;
+        font-size: 14px;
+        border-radius: 10px;
+        border: 2px solid #263FA9; /* Thinner border */
+    }
+}
 
+@media (max-width: 480px) {
+    #input-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+        right: -70px;
+        margin: 0;
+    }
+}
 
 
 
