@@ -9,9 +9,7 @@ const shareBtn=document.querySelector("#share-btn")
 const qrCodeDiv=document.querySelector("#qrcode")
 const smallLogoImg=document.querySelector("#smallLogo-img")
 const outerBorder=document.querySelector(".outer-border")
-inputBtn.addEventListener("click",function(){
-    console.log(inputEl.value)
-})
+
 
 
 
